@@ -1,4 +1,4 @@
-
+#DrAlgo , recherche dichotomique pour python2.7
 
 def recherche_dichotomique(tab,x):
     """tab tableau croissant ; si x est dans tab renvoie 
