@@ -1,7 +1,7 @@
 
 
 def recherche_dichotomique(tab,x):
-    """tab tableau croissant ; si x est dans t renvoie 
+    """tab tableau croissant ; si x est dans tab renvoie 
     un indice i correspondant, sinon renvoie None"""
 
     fini = False       #indique si la recherche est finie
@@ -16,11 +16,11 @@ def recherche_dichotomique(tab,x):
 
     while not fini:
         milieu = (debut + fin)/2
-        if x < t[milieu]:
+        if x < tab[milieu]:
             fin = milieu - 1
-        elif x > t[milieu]:
+        elif x > tab[milieu]:
             debut = milieu + 1
-        elif x == t[milieu]:   #gagne
+        elif x == tab[milieu]:   #gagne
             position = milieu
             fini = True
         if debut > fin:  #element non trouve
