@@ -15,7 +15,7 @@ def recherche_dichotomique(tab,x):
         return None
 
     while not fini:
-        milieu = (debut + fin)/2
+        milieu = (debut + fin)/2   #arrondi a l'entier inferieur en python 2.7 (pas en 3 attention)
         if x < tab[milieu]:
             fin = milieu - 1
         elif x > tab[milieu]:
